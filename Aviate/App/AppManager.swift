@@ -49,9 +49,9 @@ final class AppManager: ObservableObject {
     func setViewForDestination(_ destination: Destination, _ data: Any? = nil) -> some View {
         switch destination {
         case .login:
-            EmptyView()
+            LoginView()
         case .signup:
-            EmptyView()
+            SignUpView()
         case .airlines:
             EmptyView()
         case .flightSchedule:
