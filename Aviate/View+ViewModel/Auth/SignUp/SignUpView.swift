@@ -34,8 +34,10 @@ struct SignUpView: View {
                             .customTFStyle(with: vm.password)
                         
                         
-                        CommonButtonView(title: "Sign In") {
-                            
+                        CommonButtonView(title: "Register") {
+                            Task {
+                                await signUp()
+                            }
                         }
                         .padding(.top, 24)
                         
@@ -83,7 +85,21 @@ struct SignUpView: View {
         } //: ZStack
         .toolbar(.hidden, for: .navigationBar)
     }
+
+}
+
+extension SignUpView {
     
+    private func signUp() async {
+        vm.startLoading()
+        do {
+            try await vm.signUp()
+            self.appManager.navigate(to: .airlines)
+        } catch {
+            vm.handleErrorAndShowAlert(error: error)
+        }
+        vm.stopLoading()
+    }
     
 }
 

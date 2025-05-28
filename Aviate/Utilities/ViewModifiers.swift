@@ -17,6 +17,8 @@ struct CustomTFStyle: ViewModifier {
             .font(.system(size: 14, weight: .regular, design: .default))
             .padding(.horizontal, 10)
             .frame(height:44)
+            .autocorrectionDisabled()
+            .textInputAutocapitalization(.never)
             .background(
                 
                 ZStack {
