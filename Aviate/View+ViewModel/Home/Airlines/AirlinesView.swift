@@ -25,6 +25,19 @@ struct AirlinesView: View {
                 
                 Group {
                     NavigationBarView(isShowBackButton: false, title: "Airlines") {}
+                        .overlay(
+                            Button(action: {
+                                vm.isLogoutAlert = true
+                                vm.showAlert(title: "Log Out", message: "Are you sure you want log out?", 300)
+                            }) {
+                                Text("Log Out")
+                                    .font(.system(size: 18, weight: .medium))
+                                    .foregroundStyle(Color.custom(.primaryAppColor))
+                            }
+                                .padding(.trailing, 10)
+                            ,
+                            alignment: .trailing
+                        )
                     
                     
                     SearchBarView(searchText: $vm.searchText)
@@ -76,10 +89,49 @@ struct AirlinesView: View {
             } //: VStack
         }
         .toolbar(.hidden, for: .navigationBar)
+        .alert(
+            vm.alertTitle,
+            isPresented: $vm.isShowAlert,
+            actions: {
+                if vm.isLogoutAlert {
+                    Button("Cancel", role: .cancel) {
+                        vm.isLogoutAlert = false
+                    }
+                    Button("LogOut", role: .destructive) {
+                        vm.isLogoutAlert = false
+                        proceedLogOut()
+                    }
+                } else {
+                    Button("Ok", role: .cancel) {
+                        vm.isLogoutAlert = false
+                    }
+                }
+            },
+            message: {
+                Text(vm.alertMessage)
+            }
+        )
         .task {
             if vm.airlines.isEmpty {
                 await vm.fetchAirlines()
             }
+        }
+    }
+}
+
+extension AirlinesView {
+    private func proceedLogOut() {
+        Task {
+            vm.startLoading()
+            do {
+                
+                try await vm.proceedLogout()
+                self.appManager.navigateToRoot()
+                
+            } catch {
+                vm.handleErrorAndShowAlert(error: error)
+            }
+            vm.stopLoading()
         }
     }
 }
