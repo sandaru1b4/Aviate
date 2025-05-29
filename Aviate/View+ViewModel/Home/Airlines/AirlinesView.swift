@@ -111,11 +111,11 @@ struct AirlinesView: View {
                 Text(vm.alertMessage)
             }
         )
-        .task {
-            if vm.airlines.isEmpty {
-                await vm.fetchAirlines()
-            }
-        }
+//        .task {
+//            if vm.airlines.isEmpty {
+//                await vm.fetchAirlines()
+//            }
+//        }
     }
 }
 

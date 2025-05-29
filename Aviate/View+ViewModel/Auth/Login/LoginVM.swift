@@ -22,6 +22,16 @@ extension LoginVM {
     
     func signInCheck() throws {
        
+        guard !email.isEmpty else {
+            alertTitle = "Email Required"
+            throw AppError.message("Please enter email")
+        }
+        
+        guard Validator.emailValidator(value: email).isSuccess else {
+            alertTitle = "Valid Email Required"
+            throw AppError.message("Please enter a valid email address")
+        }
+        
         guard !password.isEmpty else {
             alertTitle = "Password Required"
             throw AppError.message("Please enter Password")
@@ -32,10 +42,6 @@ extension LoginVM {
             throw AppError.message("Password should contain minimum of 8 characters")
         }
         
-        guard Validator.emailValidator(value: email).isSuccess else {
-            alertTitle = "Valid Email Required"
-            throw AppError.message("Please enter a valid email address")
-        }
     }
  
     @MainActor
