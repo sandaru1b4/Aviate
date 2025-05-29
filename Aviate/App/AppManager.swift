@@ -53,11 +53,11 @@ final class AppManager: ObservableObject {
         case .signup:
             SignUpView()
         case .airlines:
-            EmptyView()
+            AirlinesView()
         case .flightSchedule:
-            EmptyView()
+            FlightDetailView(flight: data as? FlightData)
         case .flightData:
-            EmptyView()
+            FlightDataView(airlineIATA: data as? String)
         }
     }
     

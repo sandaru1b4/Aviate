@@ -9,8 +9,13 @@ import Foundation
 import FirebaseAuth
 
 class LoginVM: BaseVM {
+    
+    //text inputs
     @Published var email: String = ""
     @Published var password: String = ""
+    
+    @Published var isShowPassword = false
+    
 }
 
 extension LoginVM {

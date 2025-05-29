@@ -11,13 +11,12 @@ struct LoginView: View {
     
     //MARK: - PROPERTEIS
     @EnvironmentObject var appManager: AppManager
-    @StateObject var vm = LoginVM()
+    @StateObject private var vm = LoginVM()
     
     //MARK: - BODY
     var body: some View {
         ZStack {
-            // MARK: - BACKGROUND IMAGE
-            
+            // MARK: - BACKGROUND
             Color.white.ignoresSafeArea()
             
             VStack(spacing: 0) {
@@ -27,11 +26,37 @@ struct LoginView: View {
                 GeometryReader { geo in
                     ScrollView {
                         VStack(spacing: 16) {
+                            
+                            //email
                             TextField("Enter your email", text: $vm.email)
                                 .customTFStyle(with: vm.email)
                             
-                            TextField("Enter your password", text: $vm.password)
-                                .customTFStyle(with: vm.password)
+                            
+                            //password
+                            HStack(spacing: 0) {
+                                VStack {
+                                    if vm.isShowPassword {
+                                        TextField("Enter your password", text: $vm.password)
+                                        
+                                        
+                                    } else {
+                                        SecureField("Enter your password", text: $vm.password)
+                                        
+                                    }
+                                }
+                                
+                                Button(action: {
+                                    vm.isShowPassword.toggle()
+                                }, label: {
+                                    if !vm.isShowPassword {
+                                        Image(.icVisibilityOff)
+                                    } else {
+                                        Image(.icVisibility)
+                                    }
+                                })
+                                .foregroundStyle(Color.black)
+                            }
+                            .customTFStyle(with: vm.password)
                             
                             
                             CommonButtonView(title: "Sign In") {
@@ -66,8 +91,6 @@ struct LoginView: View {
                     .frame(width: geo.size.width)
                 }
             } //: VStack
-            
-            // MARK: - ALERTS
             .alert(
                 vm.alertTitle,
                 isPresented: $vm.isShowAlert,
