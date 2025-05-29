@@ -9,6 +9,63 @@
 /* Begin PBXBuildFile section */
 		84AA9F8E2DE7298B0089EED5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 84AA9F8D2DE7298B0089EED5 /* FirebaseAuth */; };
 		84AA9F9E2DE733320089EED5 /* RappleProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 84AA9F9D2DE733320089EED5 /* RappleProgressHUD */; };
+		84EB18C02DE84FFD0025AEFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18702DE84FFD0025AEFD /* AppDelegate.swift */; };
+		84EB18C12DE84FFD0025AEFD /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18712DE84FFD0025AEFD /* AppManager.swift */; };
+		84EB18C22DE84FFD0025AEFD /* AviateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18722DE84FFD0025AEFD /* AviateApp.swift */; };
+		84EB18C32DE84FFD0025AEFD /* BaseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18732DE84FFD0025AEFD /* BaseVM.swift */; };
+		84EB18C42DE84FFD0025AEFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18742DE84FFD0025AEFD /* ContentView.swift */; };
+		84EB18C52DE84FFD0025AEFD /* Airline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18762DE84FFD0025AEFD /* Airline.swift */; };
+		84EB18C62DE84FFD0025AEFD /* AirlineResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18772DE84FFD0025AEFD /* AirlineResponse.swift */; };
+		84EB18C72DE84FFD0025AEFD /* AirportInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18782DE84FFD0025AEFD /* AirportInfo.swift */; };
+		84EB18C82DE84FFD0025AEFD /* Arrival.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18792DE84FFD0025AEFD /* Arrival.swift */; };
+		84EB18C92DE84FFD0025AEFD /* BasicAirline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB187A2DE84FFD0025AEFD /* BasicAirline.swift */; };
+		84EB18CA2DE84FFD0025AEFD /* Codeshared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB187B2DE84FFD0025AEFD /* Codeshared.swift */; };
+		84EB18CB2DE84FFD0025AEFD /* Departure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB187C2DE84FFD0025AEFD /* Departure.swift */; };
+		84EB18CC2DE84FFD0025AEFD /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB187D2DE84FFD0025AEFD /* Flight.swift */; };
+		84EB18CD2DE84FFD0025AEFD /* FlightAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB187E2DE84FFD0025AEFD /* FlightAnnotation.swift */; };
+		84EB18CE2DE84FFD0025AEFD /* FlightData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB187F2DE84FFD0025AEFD /* FlightData.swift */; };
+		84EB18CF2DE84FFD0025AEFD /* FlightDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18802DE84FFD0025AEFD /* FlightDetail.swift */; };
+		84EB18D02DE84FFD0025AEFD /* FlightResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18812DE84FFD0025AEFD /* FlightResponse.swift */; };
+		84EB18D12DE84FFD0025AEFD /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18822DE84FFD0025AEFD /* Pagination.swift */; };
+		84EB18D22DE84FFD0025AEFD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18832DE84FFD0025AEFD /* User.swift */; };
+		84EB18D32DE84FFD0025AEFD /* CommonButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18852DE84FFD0025AEFD /* CommonButtonView.swift */; };
+		84EB18D42DE84FFD0025AEFD /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18862DE84FFD0025AEFD /* EmptyStateView.swift */; };
+		84EB18D52DE84FFD0025AEFD /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18872DE84FFD0025AEFD /* ErrorView.swift */; };
+		84EB18D62DE84FFD0025AEFD /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18882DE84FFD0025AEFD /* NavigationBarView.swift */; };
+		84EB18D72DE84FFD0025AEFD /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18892DE84FFD0025AEFD /* SearchBarView.swift */; };
+		84EB18D82DE84FFD0025AEFD /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB188B2DE84FFD0025AEFD /* AppColors.swift */; };
+		84EB18D92DE84FFD0025AEFD /* Color++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB188D2DE84FFD0025AEFD /* Color++.swift */; };
+		84EB18DA2DE84FFD0025AEFD /* String++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB188E2DE84FFD0025AEFD /* String++.swift */; };
+		84EB18DB2DE84FFD0025AEFD /* View++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB188F2DE84FFD0025AEFD /* View++.swift */; };
+		84EB18DC2DE84FFD0025AEFD /* AlertShowable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18912DE84FFD0025AEFD /* AlertShowable.swift */; };
+		84EB18DD2DE84FFD0025AEFD /* AviationAPIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18922DE84FFD0025AEFD /* AviationAPIServiceProtocol.swift */; };
+		84EB18DE2DE84FFD0025AEFD /* LoadingIndicatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18932DE84FFD0025AEFD /* LoadingIndicatorDelegate.swift */; };
+		84EB18DF2DE84FFD0025AEFD /* AviationAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18952DE84FFD0025AEFD /* AviationAPIService.swift */; };
+		84EB18E02DE84FFD0025AEFD /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18972DE84FFD0025AEFD /* AppError.swift */; };
+		84EB18E12DE84FFD0025AEFD /* Handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18982DE84FFD0025AEFD /* Handlers.swift */; };
+		84EB18E22DE84FFD0025AEFD /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18992DE84FFD0025AEFD /* Validator.swift */; };
+		84EB18E32DE84FFD0025AEFD /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB189A2DE84FFD0025AEFD /* ViewModifiers.swift */; };
+		84EB18E42DE84FFD0025AEFD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB189C2DE84FFD0025AEFD /* LoginView.swift */; };
+		84EB18E52DE84FFD0025AEFD /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB189D2DE84FFD0025AEFD /* LoginVM.swift */; };
+		84EB18E62DE84FFD0025AEFD /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB189F2DE84FFD0025AEFD /* SignUpView.swift */; };
+		84EB18E72DE84FFD0025AEFD /* SignUpVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18A02DE84FFD0025AEFD /* SignUpVM.swift */; };
+		84EB18E82DE84FFD0025AEFD /* AirlineRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18A32DE84FFD0025AEFD /* AirlineRowView.swift */; };
+		84EB18E92DE84FFD0025AEFD /* StatusBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18A42DE84FFD0025AEFD /* StatusBadge.swift */; };
+		84EB18EA2DE84FFD0025AEFD /* AirlinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18A62DE84FFD0025AEFD /* AirlinesView.swift */; };
+		84EB18EB2DE84FFD0025AEFD /* AirlinesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18A72DE84FFD0025AEFD /* AirlinesVM.swift */; };
+		84EB18EC2DE84FFD0025AEFD /* FlightRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18A92DE84FFD0025AEFD /* FlightRowView.swift */; };
+		84EB18ED2DE84FFD0025AEFD /* FlightDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18AB2DE84FFD0025AEFD /* FlightDataView.swift */; };
+		84EB18EE2DE84FFD0025AEFD /* FlightDataVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18AC2DE84FFD0025AEFD /* FlightDataVM.swift */; };
+		84EB18EF2DE84FFD0025AEFD /* ArrivalDetailSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18AE2DE84FFD0025AEFD /* ArrivalDetailSection.swift */; };
+		84EB18F02DE84FFD0025AEFD /* DepartureDetailSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18AF2DE84FFD0025AEFD /* DepartureDetailSection.swift */; };
+		84EB18F12DE84FFD0025AEFD /* DetailCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18B02DE84FFD0025AEFD /* DetailCard.swift */; };
+		84EB18F22DE84FFD0025AEFD /* DetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18B12DE84FFD0025AEFD /* DetailRow.swift */; };
+		84EB18F32DE84FFD0025AEFD /* FlightScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18B32DE84FFD0025AEFD /* FlightScheduleView.swift */; };
+		84EB18F42DE84FFD0025AEFD /* Aviate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18B92DE84FFD0025AEFD /* Aviate.xcdatamodeld */; };
+		84EB18F52DE84FFD0025AEFD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB18BD2DE84FFD0025AEFD /* Persistence.swift */; };
+		84EB18F62DE84FFD0025AEFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EB18B72DE84FFD0025AEFD /* Assets.xcassets */; };
+		84EB18F72DE84FFD0025AEFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84EB18BA2DE84FFD0025AEFD /* GoogleService-Info.plist */; };
+		84EB18F92DE84FFD0025AEFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EB18BC2DE84FFD0025AEFD /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,20 +89,68 @@
 		847D47822DE63BDC00BA06E2 /* Aviate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aviate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		847D47952DE63BDD00BA06E2 /* AviateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AviateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		847D479F2DE63BDD00BA06E2 /* AviateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AviateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84EB18702DE84FFD0025AEFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84EB18712DE84FFD0025AEFD /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		84EB18722DE84FFD0025AEFD /* AviateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AviateApp.swift; sourceTree = "<group>"; };
+		84EB18732DE84FFD0025AEFD /* BaseVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVM.swift; sourceTree = "<group>"; };
+		84EB18742DE84FFD0025AEFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		84EB18762DE84FFD0025AEFD /* Airline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airline.swift; sourceTree = "<group>"; };
+		84EB18772DE84FFD0025AEFD /* AirlineResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlineResponse.swift; sourceTree = "<group>"; };
+		84EB18782DE84FFD0025AEFD /* AirportInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportInfo.swift; sourceTree = "<group>"; };
+		84EB18792DE84FFD0025AEFD /* Arrival.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrival.swift; sourceTree = "<group>"; };
+		84EB187A2DE84FFD0025AEFD /* BasicAirline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAirline.swift; sourceTree = "<group>"; };
+		84EB187B2DE84FFD0025AEFD /* Codeshared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codeshared.swift; sourceTree = "<group>"; };
+		84EB187C2DE84FFD0025AEFD /* Departure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Departure.swift; sourceTree = "<group>"; };
+		84EB187D2DE84FFD0025AEFD /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		84EB187E2DE84FFD0025AEFD /* FlightAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightAnnotation.swift; sourceTree = "<group>"; };
+		84EB187F2DE84FFD0025AEFD /* FlightData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightData.swift; sourceTree = "<group>"; };
+		84EB18802DE84FFD0025AEFD /* FlightDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetail.swift; sourceTree = "<group>"; };
+		84EB18812DE84FFD0025AEFD /* FlightResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightResponse.swift; sourceTree = "<group>"; };
+		84EB18822DE84FFD0025AEFD /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
+		84EB18832DE84FFD0025AEFD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		84EB18852DE84FFD0025AEFD /* CommonButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonButtonView.swift; sourceTree = "<group>"; };
+		84EB18862DE84FFD0025AEFD /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		84EB18872DE84FFD0025AEFD /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		84EB18882DE84FFD0025AEFD /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
+		84EB18892DE84FFD0025AEFD /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		84EB188B2DE84FFD0025AEFD /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		84EB188D2DE84FFD0025AEFD /* Color++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color++.swift"; sourceTree = "<group>"; };
+		84EB188E2DE84FFD0025AEFD /* String++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String++.swift"; sourceTree = "<group>"; };
+		84EB188F2DE84FFD0025AEFD /* View++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View++.swift"; sourceTree = "<group>"; };
+		84EB18912DE84FFD0025AEFD /* AlertShowable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertShowable.swift; sourceTree = "<group>"; };
+		84EB18922DE84FFD0025AEFD /* AviationAPIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AviationAPIServiceProtocol.swift; sourceTree = "<group>"; };
+		84EB18932DE84FFD0025AEFD /* LoadingIndicatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorDelegate.swift; sourceTree = "<group>"; };
+		84EB18952DE84FFD0025AEFD /* AviationAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AviationAPIService.swift; sourceTree = "<group>"; };
+		84EB18972DE84FFD0025AEFD /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		84EB18982DE84FFD0025AEFD /* Handlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handlers.swift; sourceTree = "<group>"; };
+		84EB18992DE84FFD0025AEFD /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		84EB189A2DE84FFD0025AEFD /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
+		84EB189C2DE84FFD0025AEFD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		84EB189D2DE84FFD0025AEFD /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
+		84EB189F2DE84FFD0025AEFD /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		84EB18A02DE84FFD0025AEFD /* SignUpVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVM.swift; sourceTree = "<group>"; };
+		84EB18A32DE84FFD0025AEFD /* AirlineRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlineRowView.swift; sourceTree = "<group>"; };
+		84EB18A42DE84FFD0025AEFD /* StatusBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBadge.swift; sourceTree = "<group>"; };
+		84EB18A62DE84FFD0025AEFD /* AirlinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlinesView.swift; sourceTree = "<group>"; };
+		84EB18A72DE84FFD0025AEFD /* AirlinesVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlinesVM.swift; sourceTree = "<group>"; };
+		84EB18A92DE84FFD0025AEFD /* FlightRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightRowView.swift; sourceTree = "<group>"; };
+		84EB18AB2DE84FFD0025AEFD /* FlightDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDataView.swift; sourceTree = "<group>"; };
+		84EB18AC2DE84FFD0025AEFD /* FlightDataVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDataVM.swift; sourceTree = "<group>"; };
+		84EB18AE2DE84FFD0025AEFD /* ArrivalDetailSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalDetailSection.swift; sourceTree = "<group>"; };
+		84EB18AF2DE84FFD0025AEFD /* DepartureDetailSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartureDetailSection.swift; sourceTree = "<group>"; };
+		84EB18B02DE84FFD0025AEFD /* DetailCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCard.swift; sourceTree = "<group>"; };
+		84EB18B12DE84FFD0025AEFD /* DetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRow.swift; sourceTree = "<group>"; };
+		84EB18B32DE84FFD0025AEFD /* FlightScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightScheduleView.swift; sourceTree = "<group>"; };
+		84EB18B72DE84FFD0025AEFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84EB18B82DE84FFD0025AEFD /* Aviate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Aviate.entitlements; sourceTree = "<group>"; };
+		84EB18BA2DE84FFD0025AEFD /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		84EB18BB2DE84FFD0025AEFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84EB18BC2DE84FFD0025AEFD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84EB18BD2DE84FFD0025AEFD /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		84EB18BF2DE84FFD0025AEFD /* Aviate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Aviate.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		84B8F5112DE83C6D00E7D551 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 847D47812DE63BDC00BA06E2 /* Aviate */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		847D47842DE63BDC00BA06E2 /* Aviate */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (84B8F5112DE83C6D00E7D551 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Aviate; sourceTree = "<group>"; };
 		847D47982DE63BDD00BA06E2 /* AviateTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = AviateTests; sourceTree = "<group>"; };
 		847D47A22DE63BDD00BA06E2 /* AviateUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = AviateUITests; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -80,7 +185,7 @@
 		847D47792DE63BDC00BA06E2 = {
 			isa = PBXGroup;
 			children = (
-				847D47842DE63BDC00BA06E2 /* Aviate */,
+				84EB18BE2DE84FFD0025AEFD /* Aviate */,
 				847D47982DE63BDD00BA06E2 /* AviateTests */,
 				847D47A22DE63BDD00BA06E2 /* AviateUITests */,
 				847D47832DE63BDC00BA06E2 /* Products */,
@@ -97,6 +202,224 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		84EB18752DE84FFD0025AEFD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				84EB18702DE84FFD0025AEFD /* AppDelegate.swift */,
+				84EB18712DE84FFD0025AEFD /* AppManager.swift */,
+				84EB18722DE84FFD0025AEFD /* AviateApp.swift */,
+				84EB18732DE84FFD0025AEFD /* BaseVM.swift */,
+				84EB18742DE84FFD0025AEFD /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		84EB18842DE84FFD0025AEFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84EB18762DE84FFD0025AEFD /* Airline.swift */,
+				84EB18772DE84FFD0025AEFD /* AirlineResponse.swift */,
+				84EB18782DE84FFD0025AEFD /* AirportInfo.swift */,
+				84EB18792DE84FFD0025AEFD /* Arrival.swift */,
+				84EB187A2DE84FFD0025AEFD /* BasicAirline.swift */,
+				84EB187B2DE84FFD0025AEFD /* Codeshared.swift */,
+				84EB187C2DE84FFD0025AEFD /* Departure.swift */,
+				84EB187D2DE84FFD0025AEFD /* Flight.swift */,
+				84EB187E2DE84FFD0025AEFD /* FlightAnnotation.swift */,
+				84EB187F2DE84FFD0025AEFD /* FlightData.swift */,
+				84EB18802DE84FFD0025AEFD /* FlightDetail.swift */,
+				84EB18812DE84FFD0025AEFD /* FlightResponse.swift */,
+				84EB18822DE84FFD0025AEFD /* Pagination.swift */,
+				84EB18832DE84FFD0025AEFD /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84EB188A2DE84FFD0025AEFD /* CustomComponents */ = {
+			isa = PBXGroup;
+			children = (
+				84EB18852DE84FFD0025AEFD /* CommonButtonView.swift */,
+				84EB18862DE84FFD0025AEFD /* EmptyStateView.swift */,
+				84EB18872DE84FFD0025AEFD /* ErrorView.swift */,
+				84EB18882DE84FFD0025AEFD /* NavigationBarView.swift */,
+				84EB18892DE84FFD0025AEFD /* SearchBarView.swift */,
+			);
+			path = CustomComponents;
+			sourceTree = "<group>";
+		};
+		84EB188C2DE84FFD0025AEFD /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				84EB188B2DE84FFD0025AEFD /* AppColors.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		84EB18902DE84FFD0025AEFD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				84EB188D2DE84FFD0025AEFD /* Color++.swift */,
+				84EB188E2DE84FFD0025AEFD /* String++.swift */,
+				84EB188F2DE84FFD0025AEFD /* View++.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		84EB18942DE84FFD0025AEFD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				84EB18912DE84FFD0025AEFD /* AlertShowable.swift */,
+				84EB18922DE84FFD0025AEFD /* AviationAPIServiceProtocol.swift */,
+				84EB18932DE84FFD0025AEFD /* LoadingIndicatorDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		84EB18962DE84FFD0025AEFD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				84EB18952DE84FFD0025AEFD /* AviationAPIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		84EB189B2DE84FFD0025AEFD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				84EB188A2DE84FFD0025AEFD /* CustomComponents */,
+				84EB188C2DE84FFD0025AEFD /* Enums */,
+				84EB18902DE84FFD0025AEFD /* Extensions */,
+				84EB18942DE84FFD0025AEFD /* Protocols */,
+				84EB18962DE84FFD0025AEFD /* Services */,
+				84EB18972DE84FFD0025AEFD /* AppError.swift */,
+				84EB18982DE84FFD0025AEFD /* Handlers.swift */,
+				84EB18992DE84FFD0025AEFD /* Validator.swift */,
+				84EB189A2DE84FFD0025AEFD /* ViewModifiers.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		84EB189E2DE84FFD0025AEFD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				84EB189C2DE84FFD0025AEFD /* LoginView.swift */,
+				84EB189D2DE84FFD0025AEFD /* LoginVM.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		84EB18A12DE84FFD0025AEFD /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				84EB189F2DE84FFD0025AEFD /* SignUpView.swift */,
+				84EB18A02DE84FFD0025AEFD /* SignUpVM.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		84EB18A22DE84FFD0025AEFD /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				84EB189E2DE84FFD0025AEFD /* Login */,
+				84EB18A12DE84FFD0025AEFD /* SignUp */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		84EB18A52DE84FFD0025AEFD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				84EB18A32DE84FFD0025AEFD /* AirlineRowView.swift */,
+				84EB18A42DE84FFD0025AEFD /* StatusBadge.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		84EB18A82DE84FFD0025AEFD /* Airlines */ = {
+			isa = PBXGroup;
+			children = (
+				84EB18A52DE84FFD0025AEFD /* Components */,
+				84EB18A62DE84FFD0025AEFD /* AirlinesView.swift */,
+				84EB18A72DE84FFD0025AEFD /* AirlinesVM.swift */,
+			);
+			path = Airlines;
+			sourceTree = "<group>";
+		};
+		84EB18AA2DE84FFD0025AEFD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				84EB18A92DE84FFD0025AEFD /* FlightRowView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		84EB18AD2DE84FFD0025AEFD /* FlightData */ = {
+			isa = PBXGroup;
+			children = (
+				84EB18AA2DE84FFD0025AEFD /* Components */,
+				84EB18AB2DE84FFD0025AEFD /* FlightDataView.swift */,
+				84EB18AC2DE84FFD0025AEFD /* FlightDataVM.swift */,
+			);
+			path = FlightData;
+			sourceTree = "<group>";
+		};
+		84EB18B22DE84FFD0025AEFD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				84EB18AE2DE84FFD0025AEFD /* ArrivalDetailSection.swift */,
+				84EB18AF2DE84FFD0025AEFD /* DepartureDetailSection.swift */,
+				84EB18B02DE84FFD0025AEFD /* DetailCard.swift */,
+				84EB18B12DE84FFD0025AEFD /* DetailRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		84EB18B42DE84FFD0025AEFD /* FlightSchedule */ = {
+			isa = PBXGroup;
+			children = (
+				84EB18B22DE84FFD0025AEFD /* Components */,
+				84EB18B32DE84FFD0025AEFD /* FlightScheduleView.swift */,
+			);
+			path = FlightSchedule;
+			sourceTree = "<group>";
+		};
+		84EB18B52DE84FFD0025AEFD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				84EB18A82DE84FFD0025AEFD /* Airlines */,
+				84EB18AD2DE84FFD0025AEFD /* FlightData */,
+				84EB18B42DE84FFD0025AEFD /* FlightSchedule */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		84EB18B62DE84FFD0025AEFD /* View+ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				84EB18A22DE84FFD0025AEFD /* Auth */,
+				84EB18B52DE84FFD0025AEFD /* Home */,
+			);
+			path = "View+ViewModel";
+			sourceTree = "<group>";
+		};
+		84EB18BE2DE84FFD0025AEFD /* Aviate */ = {
+			isa = PBXGroup;
+			children = (
+				84EB18752DE84FFD0025AEFD /* App */,
+				84EB18B62DE84FFD0025AEFD /* View+ViewModel */,
+				84EB18842DE84FFD0025AEFD /* Model */,
+				84EB189B2DE84FFD0025AEFD /* Utilities */,
+				84EB18B72DE84FFD0025AEFD /* Assets.xcassets */,
+				84EB18B82DE84FFD0025AEFD /* Aviate.entitlements */,
+				84EB18B92DE84FFD0025AEFD /* Aviate.xcdatamodeld */,
+				84EB18BA2DE84FFD0025AEFD /* GoogleService-Info.plist */,
+				84EB18BB2DE84FFD0025AEFD /* Info.plist */,
+				84EB18BC2DE84FFD0025AEFD /* LaunchScreen.storyboard */,
+				84EB18BD2DE84FFD0025AEFD /* Persistence.swift */,
+			);
+			path = Aviate;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -111,9 +434,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				847D47842DE63BDC00BA06E2 /* Aviate */,
 			);
 			name = Aviate;
 			packageProductDependencies = (
@@ -223,6 +543,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84EB18F62DE84FFD0025AEFD /* Assets.xcassets in Resources */,
+				84EB18F72DE84FFD0025AEFD /* GoogleService-Info.plist in Resources */,
+				84EB18F92DE84FFD0025AEFD /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +570,60 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84EB18C02DE84FFD0025AEFD /* AppDelegate.swift in Sources */,
+				84EB18C12DE84FFD0025AEFD /* AppManager.swift in Sources */,
+				84EB18C22DE84FFD0025AEFD /* AviateApp.swift in Sources */,
+				84EB18C32DE84FFD0025AEFD /* BaseVM.swift in Sources */,
+				84EB18C42DE84FFD0025AEFD /* ContentView.swift in Sources */,
+				84EB18C52DE84FFD0025AEFD /* Airline.swift in Sources */,
+				84EB18C62DE84FFD0025AEFD /* AirlineResponse.swift in Sources */,
+				84EB18C72DE84FFD0025AEFD /* AirportInfo.swift in Sources */,
+				84EB18C82DE84FFD0025AEFD /* Arrival.swift in Sources */,
+				84EB18C92DE84FFD0025AEFD /* BasicAirline.swift in Sources */,
+				84EB18CA2DE84FFD0025AEFD /* Codeshared.swift in Sources */,
+				84EB18CB2DE84FFD0025AEFD /* Departure.swift in Sources */,
+				84EB18CC2DE84FFD0025AEFD /* Flight.swift in Sources */,
+				84EB18CD2DE84FFD0025AEFD /* FlightAnnotation.swift in Sources */,
+				84EB18CE2DE84FFD0025AEFD /* FlightData.swift in Sources */,
+				84EB18CF2DE84FFD0025AEFD /* FlightDetail.swift in Sources */,
+				84EB18D02DE84FFD0025AEFD /* FlightResponse.swift in Sources */,
+				84EB18D12DE84FFD0025AEFD /* Pagination.swift in Sources */,
+				84EB18D22DE84FFD0025AEFD /* User.swift in Sources */,
+				84EB18D32DE84FFD0025AEFD /* CommonButtonView.swift in Sources */,
+				84EB18D42DE84FFD0025AEFD /* EmptyStateView.swift in Sources */,
+				84EB18D52DE84FFD0025AEFD /* ErrorView.swift in Sources */,
+				84EB18D62DE84FFD0025AEFD /* NavigationBarView.swift in Sources */,
+				84EB18D72DE84FFD0025AEFD /* SearchBarView.swift in Sources */,
+				84EB18D82DE84FFD0025AEFD /* AppColors.swift in Sources */,
+				84EB18D92DE84FFD0025AEFD /* Color++.swift in Sources */,
+				84EB18DA2DE84FFD0025AEFD /* String++.swift in Sources */,
+				84EB18DB2DE84FFD0025AEFD /* View++.swift in Sources */,
+				84EB18DC2DE84FFD0025AEFD /* AlertShowable.swift in Sources */,
+				84EB18DD2DE84FFD0025AEFD /* AviationAPIServiceProtocol.swift in Sources */,
+				84EB18DE2DE84FFD0025AEFD /* LoadingIndicatorDelegate.swift in Sources */,
+				84EB18DF2DE84FFD0025AEFD /* AviationAPIService.swift in Sources */,
+				84EB18E02DE84FFD0025AEFD /* AppError.swift in Sources */,
+				84EB18E12DE84FFD0025AEFD /* Handlers.swift in Sources */,
+				84EB18E22DE84FFD0025AEFD /* Validator.swift in Sources */,
+				84EB18E32DE84FFD0025AEFD /* ViewModifiers.swift in Sources */,
+				84EB18E42DE84FFD0025AEFD /* LoginView.swift in Sources */,
+				84EB18E52DE84FFD0025AEFD /* LoginVM.swift in Sources */,
+				84EB18E62DE84FFD0025AEFD /* SignUpView.swift in Sources */,
+				84EB18E72DE84FFD0025AEFD /* SignUpVM.swift in Sources */,
+				84EB18E82DE84FFD0025AEFD /* AirlineRowView.swift in Sources */,
+				84EB18E92DE84FFD0025AEFD /* StatusBadge.swift in Sources */,
+				84EB18EA2DE84FFD0025AEFD /* AirlinesView.swift in Sources */,
+				84EB18EB2DE84FFD0025AEFD /* AirlinesVM.swift in Sources */,
+				84EB18EC2DE84FFD0025AEFD /* FlightRowView.swift in Sources */,
+				84EB18ED2DE84FFD0025AEFD /* FlightDataView.swift in Sources */,
+				84EB18EE2DE84FFD0025AEFD /* FlightDataVM.swift in Sources */,
+				84EB18EF2DE84FFD0025AEFD /* ArrivalDetailSection.swift in Sources */,
+				84EB18F02DE84FFD0025AEFD /* DepartureDetailSection.swift in Sources */,
+				84EB18F12DE84FFD0025AEFD /* DetailCard.swift in Sources */,
+				84EB18F22DE84FFD0025AEFD /* DetailRow.swift in Sources */,
+				84EB18F32DE84FFD0025AEFD /* FlightScheduleView.swift in Sources */,
+				84EB18F42DE84FFD0025AEFD /* Aviate.xcdatamodeld in Sources */,
+				84EB18F52DE84FFD0025AEFD /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -638,6 +1015,19 @@
 			productName = RappleProgressHUD;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		84EB18B92DE84FFD0025AEFD /* Aviate.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				84EB18BF2DE84FFD0025AEFD /* Aviate.xcdatamodel */,
+			);
+			currentVersion = 84EB18BF2DE84FFD0025AEFD /* Aviate.xcdatamodel */;
+			path = Aviate.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 847D477A2DE63BDC00BA06E2 /* Project object */;
 }
