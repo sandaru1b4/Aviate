@@ -122,7 +122,6 @@ struct AirlinesView: View {
 extension AirlinesView {
     private func proceedLogOut() {
         Task {
-            vm.startLoading()
             do {
                 
                 try await vm.proceedLogout()
@@ -131,7 +130,6 @@ extension AirlinesView {
             } catch {
                 vm.handleErrorAndShowAlert(error: error)
             }
-            vm.stopLoading()
         }
     }
 }

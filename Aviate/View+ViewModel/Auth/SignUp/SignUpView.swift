@@ -28,6 +28,7 @@ struct SignUpView: View {
                         VStack(spacing: 16) {
                             TextField("Enter your email", text: $vm.email)
                                 .customTFStyle(with: vm.email)
+                                .keyboardType(.emailAddress)
                             
                             //password
                             HStack(spacing: 0) {

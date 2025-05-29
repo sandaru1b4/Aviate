@@ -30,6 +30,7 @@ struct LoginView: View {
                             //email
                             TextField("Enter your email", text: $vm.email)
                                 .customTFStyle(with: vm.email)
+                                .keyboardType(.emailAddress)
                             
                             
                             //password
