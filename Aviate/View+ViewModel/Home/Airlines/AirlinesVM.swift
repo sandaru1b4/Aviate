@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import FirebaseAuth
 
 class AirlinesVM: BaseVM {
     
@@ -13,6 +14,8 @@ class AirlinesVM: BaseVM {
     @Published var error: Error?
     @Published var searchText = ""
     @Published var pagination = Pagination(offset: 0, limit: 100, count: 0, total: 0)
+    
+    @Published var isLogoutAlert = false
     
     private let apiService: AviationAPIServiceProtocol
     
@@ -73,6 +76,18 @@ extension AirlinesVM {
                 airline.airlineName?.localizedCaseInsensitiveContains(searchText) ?? false ||
                 airline.iataCode?.localizedCaseInsensitiveContains(searchText) ?? false
             }
+        }
+    }
+    
+    
+    @MainActor
+    func proceedLogout() async throws {
+        do {
+            try checkInternetConnection()
+            try Auth.auth().signOut()
+            AppManager.shared.signOut()
+        } catch {
+            throw error
         }
     }
     
